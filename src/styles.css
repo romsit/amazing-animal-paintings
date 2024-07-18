@@ -2,7 +2,7 @@
 @import "@angular/material/prebuilt-themes/magenta-violet.css";
 :root {
   mat-toolbar {
-    --mat-toolbar-container-background-color: #{mat.get-theme-color($theme, accent, 40)};
+    --mat-toolbar-container-background-color: #6179b1;
   }
 }
 html, body { height: 100%; }
