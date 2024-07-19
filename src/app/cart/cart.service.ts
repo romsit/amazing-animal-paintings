@@ -22,4 +22,12 @@ export class CartService {
     return this.http.get<Product[]>(this.apiCartUrl);
   }
 
+  clearCart(): Observable<void> {
+    return this.http.delete<void>(this.apiCartUrl);
+  }
+
+  checkout(products: Product[]): Observable<void> {
+    return this.http.post<void>(this.apiCheckoutUrl, products);
+  }
+
 }
